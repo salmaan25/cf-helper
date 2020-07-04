@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "codeforces-helper": {
+      "hosting": {
+        "cf": [
+          "codeforces-helper"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "codeforces-helper"
+  }
+}
