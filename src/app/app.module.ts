@@ -25,10 +25,14 @@ import { MatChipsModule } from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { TabOneContentComponent } from './tab-one-content/tab-one-content.component';
+import { TabTwoContentComponent } from './tab-two-content/tab-two-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TabOneContentComponent,
+    TabTwoContentComponent
   ],
   imports: [
     BrowserModule,
