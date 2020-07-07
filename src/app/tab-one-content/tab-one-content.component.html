@@ -1,5 +1,14 @@
 <mat-form-field style="margin:15px;" class="example-full-width">
-    <mat-label>User Name</mat-label>
-    <input #username matInput placeholder="Ex. tourist">
-  </mat-form-field>
-  <button style="margin:15px;" mat-raised-button color="primary" (click)="onTab1Click(username.value)">Search</button>
+  <mat-label>User Name</mat-label>
+  <input #username matInput placeholder="Ex. tourist">
+</mat-form-field>
+<button style="margin:15px;" mat-raised-button color="primary" (click)="onClickSearch(username.value)">Search</button>
+
+<!-- <highcharts-chart
+   [Highcharts] = "highcharts" 
+   [options] = "chartOptions" 
+   style = "width: 100%; height: 400px; display: block;"> -->
+<!-- </highcharts-chart> -->
+<div style="margin: 1%; height: 550px" [chart]="chartRatingData"></div>
+<!-- <div style="margin: 1%;" [chart]="chartProblemData"></div> -->
+<!-- <div [chart]="chart2"></div> -->

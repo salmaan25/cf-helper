@@ -8,7 +8,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { HighchartsChartModule } from 'highcharts-angular';
+// import { HighchartsChartModule } from 'highcharts-angular';
+// import { HighchartsChartComponent } from 'highcharts-angular';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 // import * as Highcharts from 'highcharts';
@@ -27,6 +28,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { TabOneContentComponent } from './tab-one-content/tab-one-content.component';
 import { TabTwoContentComponent } from './tab-two-content/tab-two-content.component';
+import { ChartModule } from 'angular-highcharts';
+import { CfHelperService } from './cf-helper.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,7 @@ import { TabTwoContentComponent } from './tab-two-content/tab-two-content.compon
     ReactiveFormsModule,
     CommonModule,
     HttpClientModule,
-    HighchartsChartModule,
+    // HighchartsChartModule,
     MatButtonModule,
     MatInputModule,
     MatTabsModule,
@@ -55,8 +58,10 @@ import { TabTwoContentComponent } from './tab-two-content/tab-two-content.compon
     MatIconModule,
     MatSlideToggleModule,
     MatTooltipModule,
+    // HighchartsChartComponent,
+    ChartModule,
   ],
-  providers: [UserDetailsService],
+  providers: [UserDetailsService, CfHelperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
